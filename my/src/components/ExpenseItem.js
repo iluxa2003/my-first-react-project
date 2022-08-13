@@ -1,10 +1,12 @@
-import "./Expenseitem.css";
+import "./ExpenseItem.css";
+import ExpenseDate from "./ExpenseDate";
+function ExpenseItem(props) {
 
-function Expenseitem(props) {
+
 
   return (
     <div className="expense-item">
-      <div>{props.date.toDateString()}</div>
+        <ExpenseDate date={props.date}/>
       <div className="expense-item__description">
         <h2>{props.title}</h2>
         <div className="expense-item__price">{props.amount}</div>
@@ -12,4 +14,4 @@ function Expenseitem(props) {
     </div>
   );
 }
-export default Expenseitem;
+export default ExpenseItem;
