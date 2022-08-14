@@ -1,7 +1,8 @@
 // import ExpenseItem from "./components/ExpenseItem";
-import Expenses from "./components/Expenses";
+import React from "react";
+import Expenses from "./components/Expenses/Expenses";
 function App() {
-  const items = [
+  const expenses = [
     {
       id: "e1",
       title: "Toilet Paper",
@@ -26,7 +27,7 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <Expenses items={items}/>
+      <Expenses items={expenses}/>
     </div>
   );
 }
